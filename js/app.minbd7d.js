@@ -5,7 +5,7 @@
     if (location.hash) return location.hash.replace("#", "");
   }
   let o = !0,
-    s = (t = 500) => {
+    s = (t = 100) => {
       let e = document.querySelector("body");
       if (o) {
         let s = document.querySelectorAll("[data-lp]");
@@ -346,7 +346,7 @@
             const s = o.closest("[data-goto]"),
               a = s.dataset.goto ? s.dataset.goto : "",
               n = !!s.hasAttribute("data-goto-header"),
-              r = s.dataset.gotoSpeed ? s.dataset.gotoSpeed : 500,
+              r = s.dataset.gotoSpeed ? s.dataset.gotoSpeed : 100,
               i = s.dataset.gotoTop ? parseInt(s.dataset.gotoTop) : 0;
             if (t.fullpage) {
               const e = document
@@ -398,7 +398,7 @@
       i = !0;
       const t = document.querySelector("header.header"),
         e = t.hasAttribute("data-scroll-show"),
-        o = t.dataset.scrollShow ? t.dataset.scrollShow : 500,
+        o = t.dataset.scrollShow ? t.dataset.scrollShow : 100,
         s = t.dataset.scroll ? t.dataset.scroll : 1;
       let a,
         c = 0;
